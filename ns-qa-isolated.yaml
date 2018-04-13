@@ -1,7 +1,0 @@
-apiVersion: v1
-kind: Namespace
-metadata:
- name: "qa-isolated"
- annotations: {
-       "opencontrail.org/isolation" : "true",
- }
