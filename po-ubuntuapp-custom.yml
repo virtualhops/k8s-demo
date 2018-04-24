@@ -1,7 +1,9 @@
 apiVersion: v1
 kind: Pod
 metadata:
- name: ubuntuapp-green
+ name: ubuntuapp
+ annotations:
+   "opencontrail.org/network" : '{"domain":"default-domain", "project": "default", "name": "net1"}'
  labels:
    app: ubuntuapp
 spec:
@@ -10,5 +12,3 @@ spec:
      image: virtualhops/ato-ubuntu:latest
      ports:
      - containerPort: 80
- nodeSelector:
-     color: green
