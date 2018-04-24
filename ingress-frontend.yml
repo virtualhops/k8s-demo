@@ -8,9 +8,9 @@ spec:
       paths:
       - path: /dev
         backend:
-          serviceName: web-app-dev
+          serviceName: frontend-dev-svc
           servicePort: 80
       - path: /qa
         backend:
-          serviceName: web-app-qa
+          serviceName: frontend-qa-svc
           servicePort: 80
