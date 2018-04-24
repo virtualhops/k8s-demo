@@ -1,10 +1,11 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: web-app-qa
+  name: frontend-dev-svc
 spec:
   selector:
-    app: web-app-qa
+    app: frontend
+    role: dev
   ports:
     - protocol: TCP
       port: 80

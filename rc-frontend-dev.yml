@@ -1,19 +1,20 @@
 apiVersion: v1
 kind: ReplicationController
 metadata:
-  name: web-app-qa
+  name: frontend-dev
 spec:
   replicas: 3
   selector:
-    app: web-app-qa
+    app: frontend
   template:
     metadata:
-      name: web-app-qa
+      name: frontend-dev
       labels:
-        app: web-app-qa
+        app: frontend
+        role: dev
     spec:
       containers:
-      - name: web-app-qa
-        image: savvythru/web-app-qa
+      - name: web-app-dev
+        image: savvythru/web-app-dev
         ports:
         - containerPort: 80
