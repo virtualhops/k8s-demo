@@ -10,6 +10,13 @@ spec:
   - Ingress
   ingress:
   - from:
+    - ipBlock:
+        cidr: 10.32.0.0/12
+        except:
+        - 10.47.255.0/24
     - podSelector:
         matchLabels:
           app: ubuntuapp
+    ports:
+    - protocol: TCP
+      port: 80

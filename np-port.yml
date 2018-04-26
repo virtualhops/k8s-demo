@@ -13,3 +13,6 @@ spec:
     - podSelector:
         matchLabels:
           app: ubuntuapp
+    ports:
+    - protocol: TCP
+      port: 80

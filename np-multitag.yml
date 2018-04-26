@@ -13,3 +13,4 @@ spec:
     - podSelector:
         matchLabels:
           app: ubuntuapp
+          what: ever

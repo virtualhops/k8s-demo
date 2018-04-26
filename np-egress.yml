@@ -8,8 +8,14 @@ spec:
       app: frontend
   policyTypes:
   - Ingress
+  - Egress
   ingress:
   - from:
     - podSelector:
         matchLabels:
           app: ubuntuapp
+  egress:
+  - to:
+    - namespaceSelector:
+        matchLabels:
+          namespace: dev

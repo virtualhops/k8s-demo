@@ -13,3 +13,9 @@ spec:
     - podSelector:
         matchLabels:
           app: ubuntuapp
+    - namespaceSelector:
+        matchLabels:
+          project: qa
+    ports:
+    - protocol: TCP
+      port: 80
