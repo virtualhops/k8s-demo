@@ -12,4 +12,10 @@ spec:
   - from:
     - podSelector:
         matchLabels:
-          app: ubuntuapp-ohoh
+          app: ubuntuapp
+    - namespaceSelector:
+        matchLabels:
+          color: orange
+    ports:
+    - protocol: TCP
+      port: 80
