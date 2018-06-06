@@ -15,7 +15,7 @@ spec:
           app: ubuntuapp
     - namespaceSelector:
         matchLabels:
-          color: orange
+          color: blue
     ports:
     - protocol: TCP
       port: 80
